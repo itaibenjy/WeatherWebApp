@@ -26,4 +26,4 @@ app.post('/api/weather/', (req, res) => {
     .catch(error => { res.json({ error }) });
 })
 
-app.listen(3000, () => console.log('Servereready listening on port 3000'))
+app.listen(process.env.PORT || 3000, () => console.log('Servereready listening on port 3000'))
